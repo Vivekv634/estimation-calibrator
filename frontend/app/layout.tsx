@@ -4,6 +4,9 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { outfit } from "@/fonts";
 import { Toaster } from "@/components/ui/sonner";
+import { Geist } from "next/font/google";
+
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: "Estimation Calibrator",
@@ -16,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={cn("font-sans", geist.variable)}>
       <body className="min-h-screen bg-gray-50 text-gray-900">
         <nav className="bg-white border-b border-gray-200">
           <div

@@ -90,10 +90,17 @@ function FeatureCard({
       >
         {step}
       </span>
-      <h3 className={cn(outfit.className, "text-sm font-semibold text-gray-900")}>
+      <h3
+        className={cn(outfit.className, "text-sm font-semibold text-gray-900")}
+      >
         {title}
       </h3>
-      <p className={cn(outfit.className, "text-sm text-gray-500 leading-relaxed")}>
+      <p
+        className={cn(
+          outfit.className,
+          "text-sm text-gray-500 leading-relaxed",
+        )}
+      >
         {description}
       </p>
     </div>
